@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP Book Templates - Checkbox</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/templates.css" />
+  </head>
+
+  <body>
+    <!-- main landing page content -->
+    <div class="main-content" id="main-content">
+      <ul class="main-menu">
+        <h1 style="color: #fff; font-size: 25px; cursor: pointer">
+          <a href="index.html" style="color: #fff">TP Book Templates</a>
+        </h1>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Home</a>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Templates </a>
+          <ul class="nav__listitemdrop">
+            <div>
+              <li><a href="index.html#content-Alerts">Alerts</a></li>
+              <li><a href="index.html#content-Buttons">Buttons</a></li>
+              <li><a href="index.html#content-Cards">Cards</a></li>
+              <li><a href="index.html#content-Sliders">Sliders</a></li>
+              <li><a href="index.html#content-Accordion">Accordion</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Modal">Modal</a></li>
+              <li><a href="index.html#content-Navbar">Navbar</a></li>
+              <li><a href="index.html#content-Popovers">Popovers</a></li>
+              <li><a href="index.html#content-Tables">Tables</a></li>
+              <li><a href="index.html#content-Dropdowns">Dropdowns</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Tab-Menu">Tab Menu</a></li>
+              <li><a href="index.html#content-List-Groups">List Groups</a></li>
+              <li><a href="index.html#content-Toast">Toast</a></li>
+              <li><a href="index.html#content-Forms">Forms</a></li>
+              <li><a href="index.html#content-Spinners">Spinners</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Checkbox">Checkbox</a></li>
+              <li><a href="index.html#content-Pagination">Pagination</a></li>
+              <li><a href="index.html#content-Jumbotron">Jumbotron</a></li>
+              <li><a href="index.html#content-Scrollspy">Scrollspy</a></li>
+              <li><a href="index.html#content-Progress">Progress</a></li>
+            </div>
+          </ul>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="contactUs.html">Contact us</a>
+        </li>
+      </ul>
+
+      <section class="bgcolors"></section>
+
+      <div class="cont">
+        <h1>Checkbox</h1>
+        <p id="sample">
+          It is an input element that allows you to insert a vector or array of values. The value attribute is used to define the value sent by the checkbox. The checked attribute is used to indicate that the element is selected.
+        </p>
+        <button
+          id="button1"
+          onclick="CopyToClipboard('div1')"
+          style="
+            float: right;
+            position: sticky;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: #fff;
+            min-width: 90px;
+            padding: 8px;
+            color: #303030;
+            font-weight: bold;
+            border: 1px solid #e9e9e9;
+            border-radius: 4px;
+          "
+          onmouseover="this.style.border = '1px solid #d5d5d5'"
+          onmouseout="this.style.border = '1px solid #e9e9e9'"
+        >
+          Copy code to clipboard
+        </button>
+        <div class="button" style="margin-top: 30px">
+          <pre class="cards-pre">
+                <code id="div1">
+<h3>&lt;!-- checkbox conainer --&gt;</h3>
+                    &lt;div&gt;
+&lt;!-- checkbox label --&gt;
+<p> &lt;!-- Change the text inside the label tag --&gt;</p>
+                    &lt;label for="comunicacion"&gt;<span> Checkbox</span>&lt;/label&gt;&lt;br&gt;
+<p> &lt;!-- Change the text inside the input tag --&gt;</p>
+&lt;!-- checkbox field 1 --&gt;
+                    &lt;input type="checkbox" name="" id="option1"&gt;<span>Checkbox option 1</span>&lt;br&gt;
+&lt;!-- checkbox field 2 --&gt;
+                    &lt;input type="checkbox" name="" id="option2"&gt;<span>Checkbox option 2</span>&lt;br&gt;
+&lt;!-- checkbox field 3 --&gt;
+                    &lt;input type="checkbox" name="" id="option3"&gt;<span>Checkbox option 3</span>&lt;br&gt;
+                &lt;/div&gt;
+<h3>&lt;!-- radio buttons conainer --&gt;</h3>
+                &lt;div&gt;
+&lt;!-- radio buttons label --&gt;
+<p> &lt;!-- Change the text inside the label tag --&gt;</p>
+                    &lt;label for="ocupacion"&gt;<span>Radio buttons</span>&lt;/label&gt;&lt;br&gt;
+<p> &lt;!-- Change the text inside the input tag --&gt;</p>
+&lt;!-- radio buttons field 1 --&gt;
+                    &lt;input type="radio" name="" id="option1"&gt;<span>Radio 1</span> &lt;br&gt;
+&lt;!-- radio buttons field 2 --&gt;
+                    &lt;input type="radio" name="" id="option2"&gt;<span>Radio 2</span>&lt;br&gt;
+&lt;!-- radio buttons field 3 --&gt;
+                    &lt;input type="radio" name="" id="option3"&gt;<span>Radio 3</span> &lt;br&gt;
+&lt;!-- radio buttons field 4 --&gt;
+                    &lt;input type="radio" name="" id="option4"&gt;<span>Radio 4</span> &lt;br&gt;
+                &lt;/div&gt;
+<h3> &lt;!-- select container --&gt;</h3>
+                &lt;div&gt;
+&lt;!-- select label --&gt;
+<p> &lt;!-- Change the text inside the label tag --&gt;</p>
+                &lt;label&gt;<span>Select field</span>&lt;/label&gt;
+&lt;!-- select label --&gt;
+                &lt;select name="status" id="status" style="background-color: #780096; color: #ffff; min-width: 300px;
+                max-width: 490px;
+                margin-left: 8px;
+                padding: 7px;
+                border-radius: 4px;
+                border: 1px solid #ddd;"&gt;
+<p>&lt;!--NOTE: select option must have one empty value="" --&gt;</p>
+                    &lt;option <span>value=""</span>&gt;Select...&lt;/option&gt;
+<p>&lt;!--Change the text options --&gt;</p>
+&lt;!-- select option 2 --&gt;
+                    &lt;option <span> value="option1"</span>&gt;<span> option 1</span>&lt;/option&gt;
+&lt;!-- select option 3 --&gt;
+                    &lt;option <span> value="option2"</span>&gt;<span> option 2</span>&lt;/option&gt;
+&lt;!-- select option 4 --&gt;
+                    &lt;option <span> value="option3"</span>&gt;<span> option 3</span>&lt;/option&gt;
+&lt;!-- select option 5 --&gt;
+                    &lt;option <span> value="option4"</span>&gt;<span> option 4</span>&lt;/option&gt;
+&lt;!-- select option 6 --&gt;
+                    &lt;option <span> value="option5"</span>&gt;<span> option 5</span>&lt;/option&gt;
+                &lt;/select&gt;   
+                </code>
+              </pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/copyClipboard.js"></script>
+  </body>
+</html>

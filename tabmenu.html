@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP Book Templates - Tabmenu</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/templates.css" />
+  </head>
+
+  <body>
+    <!-- main landing page content -->
+    <div class="main-content" id="main-content">
+      <ul class="main-menu">
+        <h1 style="color: #fff; font-size: 25px; cursor: pointer">
+          <a href="index.html" style="color: #fff">TP Book Templates</a>
+        </h1>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Home</a>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Templates </a>
+          <ul class="nav__listitemdrop">
+            <div>
+              <li><a href="index.html#content-Alerts">Alerts</a></li>
+              <li><a href="index.html#content-Buttons">Buttons</a></li>
+              <li><a href="index.html#content-Cards">Cards</a></li>
+              <li><a href="index.html#content-Sliders">Sliders</a></li>
+              <li><a href="index.html#content-Accordion">Accordion</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Modal">Modal</a></li>
+              <li><a href="index.html#content-Navbar">Navbar</a></li>
+              <li><a href="index.html#content-Popovers">Popovers</a></li>
+              <li><a href="index.html#content-Tables">Tables</a></li>
+              <li><a href="index.html#content-Dropdowns">Dropdowns</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Tab-Menu">Tab Menu</a></li>
+              <li><a href="index.html#content-List-Groups">List Groups</a></li>
+              <li><a href="index.html#content-Toast">Toast</a></li>
+              <li><a href="index.html#content-Forms">Forms</a></li>
+              <li><a href="index.html#content-Spinners">Spinners</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Checkbox">Checkbox</a></li>
+              <li><a href="index.html#content-Pagination">Pagination</a></li>
+              <li><a href="index.html#content-Jumbotron">Jumbotron</a></li>
+              <li><a href="index.html#content-Scrollspy">Scrollspy</a></li>
+              <li><a href="index.html#content-Progress">Progress</a></li>
+            </div>
+          </ul>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="contactUs.html">Contact us</a>
+        </li>
+      </ul>
+
+      <section class="bgcolors"></section>
+
+      <div class="cont">
+        <h1>Tab Menu</h1>
+        <p id="sample">
+          By using the tabmenu you will be able to organize your information in each tab in order to navigate through it easily and quickly.
+        </p>
+        <button
+        id="button1" onclick="CopyToClipboard('div1')"
+          style="
+            float: right;
+            position: sticky;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: #fff;
+            min-width: 90px;
+            padding: 8px;
+            color: #303030;
+            font-weight: bold;
+            border: 1px solid #e9e9e9;
+            border-radius: 4px;
+          "
+          onmouseover="this.style.border = '1px solid #d5d5d5'"
+          onmouseout="this.style.border = '1px solid #e9e9e9'"
+        >
+          Copy code to clipboard
+        </button>
+        <div class="button" style="margin-top: 30px;">
+            <pre class="cards-pre">
+                <code id="div1">
+ &lt;!-- Tab menu container --&gt;
+                    &lt;div class="tabmenu" style="height: 100%; font-family: 'Noto Sans', sans-serif;
+                    font-size: 17px; margin: 10px"&gt;
+ &lt;!-- Buttons menu --&gt;
+                      &lt;ul style="display: flex; margin: 0; padding: 0"&gt;
+&lt;!-- button 1 --&gt;
+<p>&lt;!-- Change the text of the button inside the li tag   --&gt;</p>
+                        &lt;li
+                        id="btn1"
+                          style="list-style: none;
+                          min-width: 100px;
+                          text-align: center;
+                          background: #a01c96;
+                          border-radius: 4px;
+                          border: none;
+                          color: #fff;
+                          margin-right: 5px;
+                          cursor: pointer;
+                          width: 50px;
+                          padding: 10px;
+                          text-decoration: none;"
+                          onclick="document.getElementById('tab1').style.display = 'block'; document.getElementById('tab2').style.display = 'none';  document.getElementById('tab3').style.display = 'none' ; 
+                          document.getElementById('btn1').style.backgroundColor = '#8a177f'; document.getElementById('btn2').style.backgroundColor = '#a01c96'; document.getElementById('btn3').style.backgroundColor = '#a01c96';"
+                        &gt;
+                        <span>Tab 1</span>
+                        &lt;/li&gt;
+&lt;!-- button 2 --&gt;
+<p>&lt;!-- Change the text of the button inside the li tag   --&gt;</p>
+                        &lt;li
+                        id="btn2"
+                        onclick="document.getElementById('btn2').style.backgroundColor = '#8a177f'; document.getElementById('btn1').style.backgroundColor = '#a01c96'; document.getElementById('btn3').style.backgroundColor = '#a01c96';
+                        document.getElementById('tab2').style.display = 'block'; document.getElementById('tab1').style.display = 'none';  document.getElementById('tab3').style.display = 'none'; "
+                        style="list-style: none;
+                        min-width: 100px;
+                        text-align: center;
+                        background-color: #a01c96;
+                        border-radius: 4px;
+                        border: none;
+                        color: #fff;
+                        margin-right: 5px;
+                        cursor: pointer;
+                        width: 50px;
+                        padding: 10px;
+                        text-decoration: none;"&gt;
+                        <span>Tab 2</span>
+                        &lt;/li&gt;
+&lt;!-- button 3 --&gt;
+<p>&lt;!-- Change the text of the button inside the li tag   --&gt;</p>
+                        &lt;li
+                        id="btn3"
+                        style="
+                        list-style: none;
+                              min-width: 100px;
+                              text-align: center;
+                              background-color: #a01c96;
+                              border-radius: 4px;
+                              border: none;
+                              color: #fff;
+                              margin-right: 5px;
+                              cursor: pointer;
+                              width: 50px;
+                              padding: 10px;
+                              text-decoration: none;
+                            "
+                          onclick="document.getElementById('btn3').style.backgroundColor = '#8a177f'; document.getElementById('btn1').style.backgroundColor = '#a01c96'; document.getElementById('btn2').style.backgroundColor = '#a01c96';
+                          document.getElementById('tab3').style.display = 'block'; document.getElementById('tab1').style.display = 'none';  document.getElementById('tab2').style.display = 'none'; "
+                        &gt; 
+                        <span>Tab 3</span>
+                        &lt;/li&gt;
+                      &lt;/ul&gt;
+&lt;!-- Tab content 1 --&gt;
+                      &lt;div
+                        id="tab1"
+                        style="
+                          background-color: #fff;
+                          z-index: 1;
+                          padding: 10px;
+                          border: 1px solid #ddd;
+                          border-radius: 4px;
+                          position: absolute;
+                          min-width: 300px;
+                          max-width: 400px;
+                          min-height: 130px;
+                          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+                        "
+                      &gt;
+<p>&lt;!-- Tab 1 title --&gt;</p>
+<p>&lt;!-- Change the title inside the h1 tag --&gt;</p>
+                        &lt;h1 style="color: #1c1c1c; font-size: 20px"&gt;<span>Example1</span>&lt;/h1&gt;
+&lt;!-- Tab 1 paragraph --&gt;
+<p>&lt;!-- Change the paragraph inside the p tag --&gt;</p>
+                        &lt;p style="color: #1c1c1c"&gt;
+                       <span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium
+                          exercitationem labore incidunt.</span>
+                        &lt;/p&gt;
+                      &lt;/div&gt;
+&lt;!-- Tab content 2 --&gt;
+                      &lt;div
+                        id="tab2"
+                        style="
+                          display: none;
+                          background-color: #fff;
+                          padding: 10px;
+                          border: 1px solid #ddd;
+                          border-radius: 4px;
+                          position: absolute;
+                          min-width: 300px;
+                          max-width: 400px;
+                          min-height: 130px;
+                          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+                        "
+                      &gt;
+&lt;!-- Tab 2 title --&gt;
+<p>&lt;!-- Change the title inside the h1 tag --&gt;</p>
+                        &lt;h1 style="color: #1c1c1c; font-size: 20px"&gt;<span>Example2</span>&lt;/h1&gt;
+&lt;!-- Tab 2 paragraph --&gt;
+<p>&lt;!-- Change the paragraph inside the p tag --&gt;</p>
+                        &lt;p style="color: #1c1c1c"&gt;
+                        <span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae
+                          similique at eum id, modi enim magni velit iste fuga pariatur vel
+                          optio voluptate placeat? Quae soluta a itaque obcaecati? Odio! Lorem
+                          ipsum dolor sit.</span> 
+                        &lt;/p&gt;
+                      &lt;/div&gt;
+&lt;!-- Tab content 3 --&gt;
+                      &lt;div
+                        id="tab3"
+                        style="
+                          display: none;
+                          background-color: #fff;
+                          padding: 10px;
+                          border: 1px solid #ddd;
+                          border-radius: 4px;
+                          position: absolute;
+                          min-width: 300px;
+                          max-width: 400px;
+                          min-height: 130px;
+                          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+                        "
+                      &gt;
+&lt;!-- Tab 3 title --&gt;
+<p>&lt;!-- Change the paragraph inside the p tag --&gt;</p>
+                        &lt;h1 style="color: #1c1c1c; font-size: 20px"&gt;Example3&lt;/h1&gt;
+&lt;!-- Tab 3 paragraph --&gt;
+<p>&lt;!-- Change the paragraph inside the p tag --&gt;</p>
+                        &lt;p style="color: #1c1c1c"&gt;
+                         <span> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium
+                          exercitationem labore incidunt. Reiciendis omnis aut suscipit
+                          molestias nesciunt totam, sapiente dolorem accusamus quae perferendis
+                          obcaecati ab laudantium earum. Nobis, quos!</span>
+                        &lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                </code>
+              </pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/copyClipboard.js"></script>
+  </body>
+</html>

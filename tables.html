@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP Book Templates - Tables</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/templates.css" />
+  </head>
+
+  <body>
+    <!-- main landing page content -->
+    <div class="main-content" id="main-content">
+      <ul class="main-menu">
+        <h1 style="color: #fff; font-size: 25px; cursor: pointer">
+          <a href="index.html" style="color: #fff">TP Book Templates</a>
+        </h1>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Home</a>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Templates </a>
+          <ul class="nav__listitemdrop">
+            <div>
+              <li><a href="index.html#content-Alerts">Alerts</a></li>
+              <li><a href="index.html#content-Buttons">Buttons</a></li>
+              <li><a href="index.html#content-Cards">Cards</a></li>
+              <li><a href="index.html#content-Sliders">Sliders</a></li>
+              <li><a href="index.html#content-Accordion">Accordion</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Modal">Modal</a></li>
+              <li><a href="index.html#content-Navbar">Navbar</a></li>
+              <li><a href="index.html#content-Popovers">Popovers</a></li>
+              <li><a href="index.html#content-Tables">Tables</a></li>
+              <li><a href="index.html#content-Dropdowns">Dropdowns</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Tab-Menu">Tab Menu</a></li>
+              <li><a href="index.html#content-List-Groups">List Groups</a></li>
+              <li><a href="index.html#content-Toast">Toast</a></li>
+              <li><a href="index.html#content-Forms">Forms</a></li>
+              <li><a href="index.html#content-Spinners">Spinners</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Checkbox">Checkbox</a></li>
+              <li><a href="index.html#content-Pagination">Pagination</a></li>
+              <li><a href="index.html#content-Jumbotron">Jumbotron</a></li>
+              <li><a href="index.html#content-Scrollspy">Scrollspy</a></li>
+              <li><a href="index.html#content-Progress">Progress</a></li>
+            </div>
+          </ul>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="contactUs.html">Contact us</a>
+        </li>
+      </ul>
+
+      <section class="bgcolors"></section>
+
+      <div class="cont">
+        <h1>Tables</h1>
+        <p id="sample">
+          Using tables, you can enter and display information in an organized way to represent groups of information.
+        </p>
+        <button
+        id="button1" onclick="CopyToClipboard('div1')"
+          style="
+            float: right;
+            position: sticky;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: #fff;
+            min-width: 90px;
+            padding: 8px;
+            color: #303030;
+            font-weight: bold;
+            border: 1px solid #e9e9e9;
+            border-radius: 4px;
+          "
+          onmouseover="this.style.border = '1px solid #d5d5d5'"
+          onmouseout="this.style.border = '1px solid #e9e9e9'"
+        >
+          Copy code to clipboard
+        </button>
+        <div class="button" style="margin-top: 30px;">
+            <pre class="cards-pre">
+                <code id="div1">
+<h3> &lt;!-- Standard table container --&gt;</h3>
+                    &lt;div
+                    class="tableC"
+                    style="font-family: 'Noto Sans', sans-serif;
+                    font-size: 17.5pt; margin: 20px; color: #1c1c1c; box-sizing: border-box;"
+&lt;!-- page title --&gt;
+<p>&lt;!--Change the title with the h1 tag--&gt;</p>
+                    &lt;h1&gt;<span>Standard Table</span>&lt;/h1&gt;
+&lt;!-- page subtitle --&gt;
+<p>&lt;!--Change the subtitle with the h2 tag--&gt;</p>
+                    &lt;h2&gt;<span>Table</span>&lt;/h2&gt;
+&lt;!-- table content --&gt;
+                    &lt;table class="tp_table" style=" width: 700px; max-width: 100%; min-width: 100%; object-fit: cover; border-spacing: 0px"&gt;
+&lt;!-- table head --&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+<p>&lt;!--Change the Headers of the Column Names inside the th tag--&gt;</p>
+                          &lt;th style="padding: 5px; text-align: justify"&gt;<span>Column Name</span>&lt;/th&gt;
+                          &lt;th style="padding: 5px; text-align: justify"&gt;<span>Column Name</span>&lt;/th&gt;
+                          &lt;th style="padding: 5px; text-align: justify"&gt;<span>Column Name</span>&lt;/th&gt;
+                          &lt;th style="padding: 5px; text-align: justify"&gt;<span>Column Name</span>&lt;/th&gt;
+                        &lt;/tr&gt;
+                      &lt;/thead&gt;
+&lt;!-- table body --&gt;
+                      &lt;tbody&gt;
+<p>&lt;!-- table first row --&gt;</p>
+                        &lt;tr&gt;
+<p>&lt;!--Change the Column Names inside the td tag--&gt;</p>
+                          &lt;td
+                            style="
+                              border-top: 1px solid #dee2e6;
+                              padding: 5px;
+                              line-height: 1.5rem;
+                            "
+                          &gt;
+                          <span>  Column Name</span>
+                          &lt;/td&gt;
+                          &lt;td
+                            style="
+                              border-top: 1px solid #dee2e6;
+                              padding: 5px;
+                              line-height: 1.5rem;
+                            "
+                          &gt;
+                          <span>  Column Name</span>
+                          &lt;/td&gt;
+                          &lt;td
+                            style="
+                              border-top: 1px solid #dee2e6;
+                              padding: 5px;
+                              line-height: 1.5rem;
+                            "
+                          &gt;
+                          <span>  Column Name</span>
+                          &lt;/td&gt;
+                          &lt;td
+                            style="
+                              border-top: 1px solid #dee2e6;
+                              padding: 5px;
+                              line-height: 1.5rem;
+                            "
+                          &gt;
+                          <span>  Column Name</span>
+                          &lt;/td&gt;
+                        &lt;/tr&gt;
+<p>&lt;!-- table second row --&gt;</p>
+                        &lt;tr&gt;
+<p>&lt;!--Change the Column Names inside the td tag--&gt;</p>
+                          &lt;td
+                            style="
+                              border-top: 1px solid #dee2e6;
+                              padding: 5px;
+                              line-height: 1.5rem;
+                            "
+                          &gt;
+                          <span>  Column Name</span>
+                          &lt;/td&gt;
+                          &lt;td
+                            style="
+                              border-top: 1px solid #dee2e6;
+                              padding: 5px;
+                              line-height: 1.5rem;
+                            "
+                          &gt;
+                          <span>  Column Name</span>
+                          &lt;/td&gt;
+                          &lt;td
+                            style="
+                              border-top: 1px solid #dee2e6;
+                              padding: 5px;
+                              line-height: 1.5rem;
+                            "
+                          &gt;
+                          <span>  Column Name</span>
+                          &lt;/td&gt;
+                          &lt;td
+                            style="
+                              border-top: 1px solid #dee2e6;
+                              padding: 5px;
+                              line-height: 1.5rem;
+                            "
+                          &gt;
+                          <spam>  Column Name</spam>
+                          &lt;/td&gt;
+                        &lt;/tr&gt;
+<p>&lt;!-- table third row --&gt;</p>
+                        &lt;tr&gt;
+<p>&lt;!--Change the Column Names inside the td tag--&gt;</p>
+                          &lt;td
+                            style="
+                              border-top: 1px solid #dee2e6;
+                              padding: 5px;
+                              line-height: 1.5rem;
+                            "
+                          &gt;
+                            <span> Column Name</span>
+                          &lt;/td&gt;
+                          &lt;td
+                            style="
+                              border-top: 1px solid #dee2e6;
+                              padding: 5px;
+                              line-height: 1.5rem;
+                            "
+                          &gt;
+                            <span> Column Name</span>
+                          &lt;/td&gt;
+                          &lt;td
+                            style="
+                              border-top: 1px solid #dee2e6;
+                              padding: 5px;
+                              line-height: 1.5rem;
+                            "
+                          &gt;
+                            <span> Column Name</span>
+                          &lt;/td&gt;
+                          &lt;td
+                            style="
+                              border-top: 1px solid #dee2e6;
+                              padding: 5px;
+                              line-height: 1.5rem;
+                            "
+                          &gt;
+                          <spam>  Column Name</spam>
+                          &lt;/td&gt;
+                        &lt;/tr&gt;
+<p>&lt;!-- table fourth row --&gt;</p>
+                        &lt;tr&gt;
+<p>&lt;!--Change the Column Names inside the td tag--&gt;</p>
+                          &lt;td
+                            style="
+                              border-top: 1px solid #dee2e6;
+                              padding: 5px;
+                              line-height: 1.5rem;
+                            "
+                          &gt;
+                           <span> Column Name</span>
+                          &lt;/td&gt;
+                          &lt;td
+                            style="
+                              border-top: 1px solid #dee2e6;
+                              padding: 5px;
+                              line-height: 1.5rem;
+                            "
+                          &gt;
+                           <span> Column Name</span>
+                          &lt;/td&gt;
+                          &lt;td
+                            style="
+                              border-top: 1px solid #dee2e6;
+                              padding: 5px;
+                              line-height: 1.5rem;
+                            "
+                          &gt;
+                           <span> Column Name</span>
+                          &lt;/td&gt;
+                          &lt;td
+                            style="
+                              border-top: 1px solid #dee2e6;
+                              padding: 5px;
+                              line-height: 1.5rem;
+                            "
+                          &gt;
+                           <span> Column Name</span>
+                          &lt;/td&gt;
+                        &lt;/tr&gt;
+                      &lt;/tbody&gt;
+                    &lt;/table&gt;
+                  &lt;/div&gt;
+                </code>
+              </pre>
+              <button
+              id="button1" onclick="CopyToClipboard('div2')"
+                style="
+                  float: right;
+                  position: sticky;
+                  margin-top: 30px;
+                  margin-bottom: 10px;
+                  cursor: pointer;
+                  background-color: #fff;
+                  min-width: 90px;
+                  padding: 8px;
+                  color: #303030;
+                  font-weight: bold;
+                  border: 1px solid #e9e9e9;
+                  border-radius: 4px;
+                "
+                onmouseover="this.style.border = '1px solid #d5d5d5'"
+                onmouseout="this.style.border = '1px solid #e9e9e9'"
+              >
+                Copy code to clipboard
+              </button>
+              <pre class="cards-pre">
+                <code id="div2">
+<h3> &lt;!-- Table hover container --&gt;</h3>
+                  &lt;div
+                  class="tableC"
+                  style="font-family: 'Noto Sans', sans-serif;
+                  font-size: 17.5pt; margin: 20px; color: #1c1c1c; box-sizing: border-box"
+                &gt;
+&lt;!-- page title --&gt;
+<p>&lt;!--Change the title with the h1 tag--&gt;</p>
+                  &lt;h1&gt;<span> Hover Table</span>&lt;/h1&gt;
+&lt;!-- page subtitle --&gt;
+<p>&lt;!--Change the subtitle with the h2 tag--&gt;</p>
+                  &lt;h2&gt;<span>Table</span>&lt;/h2&gt;
+                  &lt;!-- table content --&gt;
+                  &lt;table class="tp_table" style="width: 700px; max-width: 100%; min-width: 100%; object-fit: cover; border-spacing: 0px"&gt;
+                    &lt;!-- table head --&gt;
+                    &lt;thead&gt;
+                      &lt;tr onm&gt;
+<p>&lt;!--Change the Headers of the Column Names inside the th tag--&gt;</p>
+                        &lt;th style="padding: 5px; text-align: justify"&gt;<span>Column Name</span>&lt;/th&gt;
+                        &lt;th style="padding: 5px; text-align: justify"&gt;<span>Column Name</span>&lt;/th&gt;
+                        &lt;th style="padding: 5px; text-align: justify"&gt;<span>Column Name</span>&lt;/th&gt;
+                        &lt;th style="padding: 5px; text-align: justify"&gt;<span>Column Name</span>&lt;/th&gt;
+                      &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;!-- table body --&gt;
+                    &lt;tbody&gt;
+<p>&lt;!-- table first row --&gt;</p>
+                      &lt;tr
+                        id="tr"
+                        onmouseover="document.getElementById('tr').style.background = '#ddd'"
+                        onmouseout="document.getElementById('tr').style.background = '#fff'"
+                      &gt;
+<p>&lt;!--Change the Column Names inside the td tag--&gt;</p>
+                        &lt;td
+                          style="
+                            border-top: 1px solid #dee2e6;
+                            padding: 5px;
+                            line-height: 1.5rem;
+                          "
+                        &gt;
+                        <span>  Column Name</span>
+                        &lt;/td&gt;
+                        &lt;td
+                          style="
+                            border-top: 1px solid #dee2e6;
+                            padding: 5px;
+                            line-height: 1.5rem;
+                          "
+                        &gt;
+                        <span>  Column Name</span>
+                        &lt;/td&gt;
+                        &lt;td
+                          style="
+                            border-top: 1px solid #dee2e6;
+                            padding: 5px;
+                            line-height: 1.5rem;
+                          "
+                        &gt;
+                        <span>  Column Name</span>
+                        &lt;/td&gt;
+                        &lt;td
+                          style="
+                            border-top: 1px solid #dee2e6;
+                            padding: 5px;
+                            line-height: 1.5rem;
+                          "
+                        &gt;
+                        <span>  Column Name</span>
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+<p>&lt;!-- table second row --&gt;</p>
+                      &lt;tr
+                        id="tr1"
+                        onmouseover="document.getElementById('tr1').style.background = '#ddd'"
+                        onmouseout="document.getElementById('tr1').style.background = '#fff'"
+                      &gt;
+<p>&lt;!--Change the Column Names inside the td tag--&gt;</p>
+                        &lt;td
+                          style="
+                            border-top: 1px solid #dee2e6;
+                            padding: 5px;
+                            line-height: 1.5rem;
+                          "
+                        &gt;
+                        <span>  Column Name</span>
+                        &lt;/td&gt;
+                        &lt;td
+                          style="
+                            border-top: 1px solid #dee2e6;
+                            padding: 5px;
+                            line-height: 1.5rem;
+                          "
+                        &gt;
+                        <span>  Column Name</span>
+                        &lt;/td&gt;
+                        &lt;td
+                          style="
+                            border-top: 1px solid #dee2e6;
+                            padding: 5px;
+                            line-height: 1.5rem;
+                          "
+                        &gt;
+                        <span>  Column Name</span>
+                        &lt;/td&gt;
+                        &lt;td
+                          style="
+                            border-top: 1px solid #dee2e6;
+                            padding: 5px;
+                            line-height: 1.5rem;
+                          "
+                        &gt;
+                        <span>  Column Name</span>
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+<p>&lt;!-- table third row --&gt;</p>
+                      &lt;tr
+                        id="tr2"
+                        onmouseover="document.getElementById('tr2').style.background = '#ddd'"
+                        onmouseout="document.getElementById('tr2').style.background = '#fff'"
+                      &gt;
+<p>&lt;!--Change the Column Names inside the td tag--&gt;</p>
+                        &lt;td
+                          style="
+                            border-top: 1px solid #dee2e6;
+                            padding: 5px;
+                            line-height: 1.5rem;
+                          "
+                        &gt;
+                        <span>  Column Name</span>
+                        &lt;/td&gt;
+                        &lt;td
+                          style="
+                            border-top: 1px solid #dee2e6;
+                            padding: 5px;
+                            line-height: 1.5rem;
+                          "
+                        &gt;
+                        <span>  Column Name</span>
+                        &lt;/td&gt;
+                        &lt;td
+                          style="
+                            border-top: 1px solid #dee2e6;
+                            padding: 5px;
+                            line-height: 1.5rem;
+                          "
+                        &gt;
+                        <span>  Column Name</span>
+                        &lt;/td&gt;
+                        &lt;td
+                          style="
+                            border-top: 1px solid #dee2e6;
+                            padding: 5px;
+                            line-height: 1.5rem;
+                          "
+                        &gt;
+                        <span>  Column Name</span>
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                      &lt;!-- table fourth row --&gt;
+                      &lt;tr
+                        id="tr3"
+                        onmouseover="document.getElementById('tr3').style.background = '#ddd'"
+                        onmouseout="document.getElementById('tr3').style.background = '#fff'"
+                      &gt;
+                        &lt;td
+                          style="
+                            border-top: 1px solid #dee2e6;
+                            padding: 5px;
+                            line-height: 1.5rem;
+                          "
+                        &gt;
+                        <span>  Column Name</span>
+                        &lt;/td&gt;
+                        &lt;td
+                          style="
+                            border-top: 1px solid #dee2e6;
+                            padding: 5px;
+                            line-height: 1.5rem;
+                          "
+                        &gt;
+                          Column Name
+                        &lt;/td&gt;
+                        &lt;td
+                          style="
+                            border-top: 1px solid #dee2e6;
+                            padding: 5px;
+                            line-height: 1.5rem;
+                          "
+                        &gt;
+                        <span>  Column Name</span>
+                        &lt;/td&gt;
+                        &lt;td
+                          style="
+                            border-top: 1px solid #dee2e6;
+                            padding: 5px;
+                            line-height: 1.5rem;
+                          "
+                        &gt;
+                        <span>  Column Name</span>
+                        &lt;/td&gt;
+                      &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                  &lt;/table&gt;
+                &lt;/div&gt;
+                </code>
+              </pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/copyClipboard.js"></script>
+  </body>
+</html>

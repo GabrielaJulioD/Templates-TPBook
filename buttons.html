@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP Book Templates - Buttons</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/templates.css" />
+  </head>
+
+  <body>
+    <!-- main landing page content -->
+    <div class="main-content" id="main-content">
+      <ul class="main-menu">
+        <h1 style="color: #fff; font-size: 25px; cursor: pointer">
+          <a href="index.html" style="color: #fff">TP Book Templates</a>
+        </h1>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Home</a>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Templates </a>
+          <ul class="nav__listitemdrop">
+            <div>
+              <li><a href="index.html#content-Alerts">Alerts</a></li>
+              <li><a href="index.html#content-Buttons">Buttons</a></li>
+              <li><a href="index.html#content-Cards">Cards</a></li>
+              <li><a href="index.html#content-Sliders">Sliders</a></li>
+              <li><a href="index.html#content-Accordion">Accordion</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Modal">Modal</a></li>
+              <li><a href="index.html#content-Navbar">Navbar</a></li>
+              <li><a href="index.html#content-Popovers">Popovers</a></li>
+              <li><a href="index.html#content-Tables">Tables</a></li>
+              <li><a href="index.html#content-Dropdowns">Dropdowns</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Tab-Menu">Tab Menu</a></li>
+              <li><a href="index.html#content-List-Groups">List Groups</a></li>
+              <li><a href="index.html#content-Toast">Toast</a></li>
+              <li><a href="index.html#content-Forms">Forms</a></li>
+              <li><a href="index.html#content-Spinners">Spinners</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Checkbox">Checkbox</a></li>
+              <li><a href="index.html#content-Pagination">Pagination</a></li>
+              <li><a href="index.html#content-Jumbotron">Jumbotron</a></li>
+              <li><a href="index.html#content-Scrollspy">Scrollspy</a></li>
+              <li><a href="index.html#content-Progress">Progress</a></li>
+            </div>
+          </ul>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="contactUs.html">Contact us</a>
+        </li>
+      </ul>
+
+      <section class="bgcolors"></section>
+
+      <div class="cont">
+        <h1>Buttons</h1>
+        <p id="sample">
+          You will be able to choose different types of buttons to include within the templates provided.
+        </p>
+        <button
+        id="button1" onclick="CopyToClipboard('div1')"
+          style="
+            float: right;
+            position: sticky;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: #fff;
+            min-width: 90px;
+            padding: 8px;
+            color: #303030;
+            font-weight: bold;
+            border: 1px solid #e9e9e9;
+            border-radius: 4px;
+          "
+          onmouseover="this.style.border = '1px solid #d5d5d5'"
+          onmouseout="this.style.border = '1px solid #e9e9e9'"
+        >
+          Copy code to clipboard
+        </button>
+        <div class="button" style="margin-top: 30px;">
+            <pre id="div1">
+        <code >
+        <h3>&lt;!--Button Primary--&gt;</h3>
+        <p>&lt;!-- Change the text of the button inside the value  --&gt;</p>
+        <li>&lt;input type="button" <span> value="Primary" </span> style="cursor: pointer; background-color:#a01c96; width: 90px; padding: 8px; color: #fff; border: none; border-radius: 4px;" onmouseover="this.style.background = '#8b1780'" onmouseout="this.style.background = '#a01c96'"&gt;</a</li>
+        <h3>&lt;!--Button Secundary--&gt;</h3>
+        <p>&lt;!-- Change the text of the button inside the value  --&gt;</p>
+        <li>&lt;input type="button" <span>value="Secundary"</span> style="cursor: pointer; background-color:#dedede; width: 90px; padding: 8px; color: #303030; font-weight: bold; border: none; border-radius: 4px;" onmouseover="this.style.background = '#cccccc'" onmouseout="this.style.background = '#dedede'"&gt;</li>
+        <h3>&lt;!--Button White--&gt;</h3>
+        <p>&lt;!-- Change the text of the button inside the value  --&gt;</p>
+        <li>&lt;input type="button" <span>value="White"</span> style="cursor: pointer; background-color:#f5f5f5; width: 90px; padding: 8px; color: #303030; font-weight: bold;  border: none; border-radius: 4px;" onmouseover="this.style.background = '#f5f5f5'" onmouseout="this.style.background = '#f4f4f4'"&gt;</li>
+        <h3>&lt;!--Button Terciary--&gt;</h3>
+        <p>&lt;!-- Change the text of the button inside the value  --&gt;</p>
+        <li>&lt;input type="button" <span>value="Tertiary"</span> style="cursor: pointer; background-color:#fff; width: 90px; padding: 8px; color: #303030; font-weight: bold;  border: 1px solid #e9e9e9; border-radius: 4px;" onmouseover="this.style.border = '1px solid #d5d5d5'" onmouseout="this.style.border = '1px solid #e9e9e9'"&gt;</li>
+        <h3>&lt;!--Button Link--&gt;</h3>
+        <p>&lt;!-- Change the text inside of the link tag and the url link within the href attribute  --&gt;</p>
+        <li >&lt;li style="list-style:none;" &gt;&lt;a <span> href="https://www.google.com/" </span> style="text-decoration: none; width: 90px; padding: 8px; color: #ae2da9; font-size: 20px; font-weight: bold;" onmouseover="this.style.textDecoration = 'underline'" onmouseout="this.style.textDecoration = 'none'"&gt; <span>Link</span> &lt;/a&gt;&lt;/li&gt;</li>
+        <h3>&lt;!--Button Success--&gt;</h3>
+        <p>&lt;!-- Change the text of the button inside the value  --&gt;</p>
+        <li>&lt;input type="button" <span>value="Success"</span>  style="cursor: pointer; background-color:#65d08d; width: 90px; padding: 8px; color: #fff; border: none; border-radius: 4px;" onmouseover="this.style.background = '#5dc082'" onmouseout="this.style.background = '#65d08d'"&gt;</li>
+        <h3>&lt;!--Button Warning--&gt;</h3>
+        <p>&lt;!-- Change the text of the button inside the value  --&gt;</p>
+        <li>&lt;input type="button" <span>value="Warning"</span> style="cursor: pointer; background-color:#f7dd55; width: 90px; padding: 8px; color: #504933; font-weight: bold;  border: none; border-radius: 4px;" onmouseover="this.style.background = '#f5d656'" onmouseout="this.style.background = '#f7dd55'"&gt;</li>
+        <h3>&lt;!--Button Error--&gt;</h3>
+        <p>&lt;!-- Change the text of the button inside the value  --&gt;</p>
+        <li>&lt;input type="button" <span> value="Error"</span> style="cursor: pointer; background-color:#e62e2d; width: 90px; padding: 8px; color: #fff; border: none; border-radius: 4px;" onmouseover="this.style.background = '#d92b2a'" onmouseout="this.style.background = '#e62e2d'"&gt;</li>
+ </code>
+</pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/copyClipboard.js"></script>
+  </body>
+</html>

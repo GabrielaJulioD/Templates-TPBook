@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP Book Templates - Jumbotron</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/templates.css" />
+  </head>
+
+  <body>
+    <!-- main landing page content -->
+    <div class="main-content" id="main-content">
+      <ul class="main-menu">
+        <h1 style="color: #fff; font-size: 25px; cursor: pointer">
+          <a href="index.html" style="color: #fff">TP Book Templates</a>
+        </h1>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Home</a>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Templates </a>
+          <ul class="nav__listitemdrop">
+            <div>
+              <li><a href="index.html#content-Alerts">Alerts</a></li>
+              <li><a href="index.html#content-Buttons">Buttons</a></li>
+              <li><a href="index.html#content-Cards">Cards</a></li>
+              <li><a href="index.html#content-Sliders">Sliders</a></li>
+              <li><a href="index.html#content-Accordion">Accordion</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Modal">Modal</a></li>
+              <li><a href="index.html#content-Navbar">Navbar</a></li>
+              <li><a href="index.html#content-Popovers">Popovers</a></li>
+              <li><a href="index.html#content-Tables">Tables</a></li>
+              <li><a href="index.html#content-Dropdowns">Dropdowns</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Tab-Menu">Tab Menu</a></li>
+              <li><a href="index.html#content-List-Groups">List Groups</a></li>
+              <li><a href="index.html#content-Toast">Toast</a></li>
+              <li><a href="index.html#content-Forms">Forms</a></li>
+              <li><a href="index.html#content-Spinners">Spinners</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Checkbox">Checkbox</a></li>
+              <li><a href="index.html#content-Pagination">Pagination</a></li>
+              <li><a href="index.html#content-Jumbotron">Jumbotron</a></li>
+              <li><a href="index.html#content-Scrollspy">Scrollspy</a></li>
+              <li><a href="index.html#content-Progress">Progress</a></li>
+            </div>
+          </ul>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="contactUs.html">Contact us</a>
+        </li>
+      </ul>
+
+      <section class="bgcolors"></section>
+
+      <div class="cont">
+        <h1>Jumbotron</h1>
+        <p id="sample">
+          The jumbotron is a tool that will allow you to enter page headers with useful information for users.
+        </p>
+        <button
+          id="button1"
+          onclick="CopyToClipboard('div1')"
+          style="
+            float: right;
+            position: sticky;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: #fff;
+            min-width: 90px;
+            padding: 8px;
+            color: #303030;
+            font-weight: bold;
+            border: 1px solid #e9e9e9;
+            border-radius: 4px;
+          "
+          onmouseover="this.style.border = '1px solid #d5d5d5'"
+          onmouseout="this.style.border = '1px solid #e9e9e9'"
+        >
+          Copy code to clipboard
+        </button>
+        <div class="button" style="margin-top: 30px">
+          <pre class="cards-pre">
+                <code id="div1">
+                    &lt;!-- Jumbotron container --&gt;
+                    &lt;div
+                    id="basic-jumbotron"
+                    style="
+                      font-family: 'Noto Sans', sans-serif;
+                      background-color: #f0f0f0;
+                      border-radius: 4px;
+                      margin: 2%;
+                      padding: 20px;
+                      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+                      color: #1c1c11;
+                    "
+                  &gt;
+&lt;!-- jumbotron title --&gt;
+<p>&lt;!-- Change the title of the Jumbotron inside the h1 tag --&gt;</p>
+&lt;h1&gt;<span>Jumbotron title</span>&lt;/h1&gt;
+<p>&lt;!-- Change the text of the card inside the p tag --&gt;</p>
+                    &lt;p style="color: #494949;"&gt;
+                  <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nulla magni
+                      ut quod voluptatem? Dolores.
+                    </span> 
+                    &lt;/p&gt;
+                    &lt;!-- line divider --&gt;
+                    &lt;div style="margin: 5px 0 5px 0; width: 100%; height: 1px; background-color: #ddd;" &gt;&lt;/div&gt;
+&lt;!-- jumbotron second paragrahp --&gt;
+<p>&lt;!-- Change the text of the card inside the p tag --&gt;</p>
+                    &lt;p&gt;
+                   <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima
+                      veritatis explicabo facere recusandae asperiores. Aperiam non hic
+                      exercitationem et, fugit enim dolorum doloremque numquam necessitatibus
+                      quasi molestias delectus, explicabo veritatis.</span>
+                    &lt;/p&gt;
+                    &lt;!-- jumbotron action button  --&gt;
+<p>&lt;!-- Change the text of the button inside the value  --&gt;</p>
+                    &lt;input
+                   <span>value="Learn more" </span>
+                    type="button" id="btn_example"
+                      style="
+                      text-align: center;
+                        min-width: 150px;
+                        background-color: #a01c96;
+                        border-radius: 4px;
+                        border: none;
+                        color: #fff;
+                        cursor: pointer;
+                        padding: 10px;
+                        text-decoration: none;
+                      "
+                      onmouseover="this.style.background = '#8a177f'"
+                      onmouseout="this.style.background = '#a01c96'"
+                    /&gt;
+                  &lt;/div&gt;
+                </code>
+              </pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/copyClipboard.js"></script>
+  </body>
+</html>

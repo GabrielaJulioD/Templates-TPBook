@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP Book Templates - Form</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/templates.css" />
+  </head>
+
+  <body>
+    <!-- main landing page content -->
+    <div class="main-content" id="main-content">
+      <ul class="main-menu">
+        <h1 style="color: #fff; font-size: 25px; cursor: pointer">
+          <a href="index.html" style="color: #fff">TP Book Templates</a>
+        </h1>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Home</a>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Templates </a>
+          <ul class="nav__listitemdrop">
+            <div>
+              <li><a href="index.html#content-Alerts">Alerts</a></li>
+              <li><a href="index.html#content-Buttons">Buttons</a></li>
+              <li><a href="index.html#content-Cards">Cards</a></li>
+              <li><a href="index.html#content-Sliders">Sliders</a></li>
+              <li><a href="index.html#content-Accordion">Accordion</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Modal">Modal</a></li>
+              <li><a href="index.html#content-Navbar">Navbar</a></li>
+              <li><a href="index.html#content-Popovers">Popovers</a></li>
+              <li><a href="index.html#content-Tables">Tables</a></li>
+              <li><a href="index.html#content-Dropdowns">Dropdowns</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Tab-Menu">Tab Menu</a></li>
+              <li><a href="index.html#content-List-Groups">List Groups</a></li>
+              <li><a href="index.html#content-Toast">Toast</a></li>
+              <li><a href="index.html#content-Forms">Forms</a></li>
+              <li><a href="index.html#content-Spinners">Spinners</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Checkbox">Checkbox</a></li>
+              <li><a href="index.html#content-Pagination">Pagination</a></li>
+              <li><a href="index.html#content-Jumbotron">Jumbotron</a></li>
+              <li><a href="index.html#content-Scrollspy">Scrollspy</a></li>
+              <li><a href="index.html#content-Progress">Progress</a></li>
+            </div>
+          </ul>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="contactUs.html">Contact us</a>
+        </li>
+      </ul>
+
+      <section class="bgcolors"></section>
+
+      <div class="cont">
+        <h1>Forms</h1>
+        <p id="sample">
+          A form will allow users to enter information.
+        </p>
+        <button
+          id="button1"
+          onclick="CopyToClipboard('div1')"
+          style="
+            float: right;
+            position: sticky;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: #fff;
+            min-width: 90px;
+            padding: 8px;
+            color: #303030;
+            font-weight: bold;
+            border: 1px solid #e9e9e9;
+            border-radius: 4px;
+          "
+          onmouseover="this.style.border = '1px solid #d5d5d5'"
+          onmouseout="this.style.border = '1px solid #e9e9e9'"
+        >
+          Copy code to clipboard
+        </button>
+        <div class="button" style="margin-top: 30px">
+          <pre class="cards-pre">
+                <code id="div1">
+&lt;!-- form container --&gt;
+                    &lt;fieldset
+                    style="
+                      min-width: 320px;
+                      max-width: 500px;
+                      border: 1px solid #ddd;
+                      border-radius: 4px;
+                      box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+                      padding: 20px;
+                      margin: 0 auto;
+                      margin-top: 3%;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: center;
+                      align-items: center;
+                      color: #1c1c1c;
+                      background-color: #fff;
+                    "
+                  &gt;
+&lt;!-- form title --&gt;
+<p> &lt;!-- Change the title inside the h1 tag --&gt;</p>
+                    &lt;h1 style="text-align: center; margin: 0"&gt;<span> Form title</span>&lt;/h1&gt;
+<h3>&lt;!-- imput 1 section standard --&gt;</h3>
+                    &lt;div class="input1" style="display: flex; flex-direction: column"&gt;
+<p> &lt;!-- Change the text inside the label tag --&gt;</p>
+                      &lt;label for="" style="margin: 8px; font-weight: bold"&gt;<span> Standard Field </span>&lt;/label&gt;
+                      &lt;input
+                        type="text"
+                        style="
+                          min-width: 300px;
+                          max-width: 500px;
+                          margin-left: 8px;
+                          padding: 7px;
+                          border-radius: 4px;
+                          border: 1px solid #ddd;
+                        "
+                        placeholder="placeholder text"
+                      /&gt;
+<p> &lt;!-- Change the Help text inside the small tag --&gt;</p>
+                      &lt;small
+                        style="margin: 8px 9px 0"
+                        id="emailHelp"
+                        class="form-text text-muted"&gt;<span>Help text </span> &lt;/small&gt;
+                    &lt;/div&gt;
+<h3>&lt;!-- imput 2 section select--&gt;</h3>
+                    &lt;div class="input2" style="display: flex; flex-direction: column"&gt;
+                      &lt;label for="" style="margin: 8px; font-weight: bold"&gt;<span> Select Field</span> &lt;/label&gt;
+                      &lt;select
+                        name=""
+                        id=""
+                        style="
+                          min-width: 300px;
+                          max-width: 490px;
+                          margin-left: 8px;
+                          padding: 7px;
+                          border-radius: 4px;
+                          border: 1px solid #ddd;
+                        "
+                      &gt;
+<p> &lt;!-- Change the text inside the option tag --&gt;</p>
+                        &lt;option value=""&gt;<span>Select...</span>&lt;/option&gt;
+                        &lt;option value="item1"&gt;<span>Item 1</span>&lt;/option&gt;
+                        &lt;option value="item2"&gt;<span>Item 2</span>&lt;/option&gt;
+                        &lt;option value="item3"&gt;<span>Item 3</span>&lt;/option&gt;
+                        &lt;option value="item4"&gt;<span>Item 4</span>&lt;/option&gt;
+                      &lt;/select&gt;
+                    &lt;/div&gt;
+<h3>&lt;!-- imput 3 section message--&gt;</h3>
+                    &lt;div class="input3" style="display: flex; flex-direction: column"&gt;
+<p> &lt;!-- Change the text inside the label tag --&gt;</p>
+                      &lt;label for="" style="margin: 8px; font-weight: bold"&gt;<span> Message Field </span>&lt;/label&gt;
+                      &lt;textarea
+                        name="message"
+                        id=""
+                        style="
+                          min-width: 300px;
+                          max-width: 490px;
+                          height: 90px;
+                          margin-left: 8px;
+                          resize: none;
+                          padding: 7px;
+                          border-radius: 4px;
+                          border: 1px solid #ddd;
+                        "
+                        placeholder="placeholder text"
+                      &gt;&lt;/textarea&gt;
+                    &lt;/div&gt;
+<h3>&lt;!-- imput 4 section password --&gt;</h3>
+                    &lt;div class="input4" style="display: flex; flex-direction: column"&gt;
+<p> &lt;!-- Change the text inside the label tag --&gt;</p>
+                      &lt;label for="" style="margin: 8px; font-weight: bold"&gt;<span> Password </span>&lt;/label&gt;
+                      &lt;input
+                        style="
+                          min-width: 300px;
+                          max-width: 500px;
+                          margin-left: 8px;
+                          padding: 7px;
+                          border-radius: 4px;
+                          border: 1px solid #ddd;
+                        "
+                        type="password"
+                        class="form-control"
+                        id="inputPassword"
+                        placeholder="Password"
+                      /&gt;
+                    &lt;/div&gt;
+<h3>&lt;!-- imput 5 section check-box --&gt;</h3>
+                    &lt;div class="form-check" style="margin-top: 10px; width: 63%;"&gt;
+                      &lt;input type="checkbox" class="form-check-input" id="exampleCheck1" /&gt;
+<p> &lt;!-- Change the text inside the label tag --&gt;</p>
+                      &lt;label class="form-check-label" for="exampleCheck1"&gt;<span> Check me out!</span>&lt;/label&gt;
+                    &lt;/div&gt;
+                    <h3>&lt;!-- form action button  --&gt;</h3>
+        <p>&lt;!-- Change the text of the button inside the value  --&gt;</p>
+                    &lt;input
+                     <span>value=" Click Me!"</span>
+                      type="button"
+                      onclick="alert('TP alert')"
+                      onmouseover="this.style.background = '#8a177f'"
+                      onmouseout="this.style.background = '#a01c96'"
+                      style="
+                        margin-top: 20px;
+                        min-width: 150px;
+                        background-color: #a01c96;
+                        border-radius: 4px;
+                        border: none;
+                        color: #fff;
+                        margin-right: 5px;
+                        cursor: pointer;
+                        width: 100px;
+                        padding: 10px;
+                        text-decoration: none;
+                      "
+                     /&gt;
+                  &lt;/fieldset&gt;
+                </code>
+              </pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/copyClipboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP Book Templates - Modal</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/templates.css" />
+  </head>
+
+  <body>
+    <!-- main landing page content -->
+    <div class="main-content" id="main-content">
+      <ul class="main-menu">
+        <h1 style="color: #fff; font-size: 25px; cursor: pointer">
+          <a href="index.html" style="color: #fff">TP Book Templates</a>
+        </h1>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Home</a>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Templates </a>
+          <ul class="nav__listitemdrop">
+            <div>
+              <li><a href="index.html#content-Alerts">Alerts</a></li>
+              <li><a href="index.html#content-Buttons">Buttons</a></li>
+              <li><a href="index.html#content-Cards">Cards</a></li>
+              <li><a href="index.html#content-Sliders">Sliders</a></li>
+              <li><a href="index.html#content-Accordion">Accordion</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Modal">Modal</a></li>
+              <li><a href="index.html#content-Navbar">Navbar</a></li>
+              <li><a href="index.html#content-Popovers">Popovers</a></li>
+              <li><a href="index.html#content-Tables">Tables</a></li>
+              <li><a href="index.html#content-Dropdowns">Dropdowns</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Tab-Menu">Tab Menu</a></li>
+              <li><a href="index.html#content-List-Groups">List Groups</a></li>
+              <li><a href="index.html#content-Toast">Toast</a></li>
+              <li><a href="index.html#content-Forms">Forms</a></li>
+              <li><a href="index.html#content-Spinners">Spinners</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Checkbox">Checkbox</a></li>
+              <li><a href="index.html#content-Pagination">Pagination</a></li>
+              <li><a href="index.html#content-Jumbotron">Jumbotron</a></li>
+              <li><a href="index.html#content-Scrollspy">Scrollspy</a></li>
+              <li><a href="index.html#content-Progress">Progress</a></li>
+            </div>
+          </ul>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="contactUs.html">Contact us</a>
+        </li>
+      </ul>
+
+      <section class="bgcolors"></section>
+
+      <div class="cont">
+        <h1>Modal</h1>
+        <p id="sample">
+          A modal window is a window that opens on the web page above the active content and can then be closed by clicking the mouse.
+        </p>
+        <button
+        id="button1" onclick="CopyToClipboard('div1')"
+          style="
+            float: right;
+            position: sticky;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: #fff;
+            min-width: 90px;
+            padding: 8px;
+            color: #303030;
+            font-weight: bold;
+            border: 1px solid #e9e9e9;
+            border-radius: 4px;
+          "
+          onmouseover="this.style.border = '1px solid #d5d5d5'"
+          onmouseout="this.style.border = '1px solid #e9e9e9'"
+        >
+          Copy code to clipboard
+        </button>
+        <div class="button" style="margin-top: 30px;">
+            <pre class="cards-pre">
+                <code id="div1">
+&lt;!--modal container--&gt;
+                    &lt;div class="modal" style=" font-family: 'Noto Sans', sans-serif;
+                    font-size: 17.5pt; color: #1c1c1c; font-family: 'Noto Sans', sans-serif"&gt;
+                      &lt;div class="" style="position: relative; "&gt;
+<p>&lt;!--modal content title--&gt;</p>
+<p>&lt;!--Change the content title with the h1 tag--&gt;</p>
+                        &lt;h1&gt;<span>Content</span>&lt;/h1&gt;
+&lt;!--Content button to show modal--&gt;
+<p>&lt;!-- Change the text of the button inside the value  --&gt;</p>
+                        &lt;input 
+                        <span> value="Open Modal"</span>
+                        type="button"
+                          style="
+                            margin-top: 20px;
+                            min-width: 150px;
+                            background-color: #a01c96;
+                            border-radius: 4px;
+                            border: none;
+                            color: #fff;
+                            margin-right: 5px;
+                            cursor: pointer;
+                            width: 100px;
+                            padding: 10px;
+                            text-decoration: none;
+                          "
+                          onclick="document.getElementById('modal').style.display = 'block'"
+                        /&gt;
+                      &lt;/div&gt;
+&lt;!--Displayed modal content--&gt;
+                      &lt;div
+                        id="modal"
+                        style="
+                           position: fixed;
+                            top: 0;
+                            left: 0;
+                            z-index: 1055;
+                            display: none;
+                            width: 100%;
+                            height: 100%;
+                            overflow-x: hidden;
+                            overflow-y: auto;
+                            outline: 0;
+                          padding: 30px;
+                          box-sizing: border-box;
+                          background-color: #212529bd;
+                        "
+                      &gt;
+                        &lt;div
+                          id="modal-container"
+                          style="
+                            position: relative;
+                            margin: 0 auto;
+                            max-width: 700px;
+                            min-width: 300px;
+                            background-color: #fff;
+                            border-radius: 4px;
+                            padding: 10px;
+                            z-index: 10000000;
+                          "
+                        &gt;
+&lt;!--Displayed modal header--&gt;
+                        &lt;div id="modal-header" style="display: flex; justify-content: space-around; width: 100%;"&gt;
+&lt;!--modal title--&gt;
+<p>&lt;!--Change the title with the h1 tag--&gt;</p>
+                            &lt;h1 id="modal-title" style="width: 90%"&gt;<span>Modal title</span>&lt;/h1&gt;
+&lt;!--close x button--&gt;
+                            &lt;input value="&times;"  type="button" class="bttn-close" value="&times;"  type="button" class="bttn-close" style="border: none; background:none; font-size: 18px; color: rgb(202, 201, 201); cursor: pointer;"   onclick="document.getElementById('modal').style.display = 'none'"/&gt;
+                        &lt;/div&gt;
+                        &lt;div class="modal-content" style="text-align: justify;"&gt;
+                          &lt;figure class="modal-picture" style="display: grid; width: 100%; justify-content: center ; align-items: center; "&gt;
+&lt;!--modal image--&gt;
+<p>&lt;!-- Change the location of the file as found in TP Book --&gt;</p>
+                              &lt;img<span> src="https://tp-book-prod.azurewebsites.net/Filemanager/idcampaing/image-example1.png"</span> class="modal-img" style="width: 90%;
+                              max-width: 400px;
+                              margin-bottom: 2em;"&gt;
+                          &lt;/figure&gt;
+&lt;!--modal title--&gt;
+<p>&lt;!--Change the title with the h2 tag--&gt;</p>
+                          &lt;h2 class="modal-subtitle"&gt;Modal title&lt;/h2&gt;
+&lt;!--modal paragraph--&gt;
+<p> &lt;!-- Change the paragraph inside the p tag --&gt;</p>
+                          &lt;p class="modal-paragraph"&gt;
+                          <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ut molestiae
+                              optio asperiores voluptates magnam nisi. </span>&lt;/p&gt;
+&lt;!--modal action buttons--&gt;
+                              &lt;div class="buttons" style=" display: flex; justify-content: flex-end;"&gt;
+&lt;!--button to close modal--&gt;
+                              &lt;input type="button"
+                              style="
+                                text-align: center;
+                                min-width: 70px;
+                                background-color: #7b7b7b;
+                                border-radius: 4px;
+                                border: none;
+                                color: #fff;
+                                cursor: pointer;
+                                width: 100px;
+                                padding: 10px;
+                                margin: 10px;
+                                text-decoration: none;
+                              "
+                              onclick="document.getElementById('modal').style.display = 'none'"
+                              onmouseover="this.style.background = '#6b6b6b'"
+                              onmouseout="this.style.background = '#7b7b7b'"
+                              value="Close" /&gt;
+&lt;!--button to save modal process--&gt;
+<p>&lt;!-- Change the text of the button inside the value  --&gt;</p>
+                              &lt;input
+                              <span>value="Save Changes" </span>
+                              type="button"
+                              style="
+                                text-align: center;
+                                min-width: 70px;
+                                width: 147px;
+                                background-color: #a01c96;
+                                border-radius: 4px;
+                                border: none;
+                                color: #fff;
+                                cursor: pointer;
+                                padding: 10px;
+                                margin: 10px;
+                                text-decoration: none;
+                              "
+                              onclick="alert('Saved')"
+                              onmouseover="this.style.background = '#8a177f'"
+                              onmouseout="this.style.background = '#a01c96'"
+                            /&gt;
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;/div&gt;
+                      &lt;/div&gt;
+                  &lt;/div&gt;
+                </code>
+              </pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/copyClipboard.js"></script>
+  </body>
+</html>

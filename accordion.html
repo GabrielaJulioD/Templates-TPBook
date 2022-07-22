@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP Book Templates - Accordion</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/templates.css" />
+  </head>
+
+  <body>
+    <!-- main landing page content -->
+    <div class="main-content" id="main-content">
+      <ul class="main-menu">
+        <h1 style="color: #fff; font-size: 25px; cursor: pointer">
+          <a href="index.html" style="color: #fff">TP Book Templates</a>
+        </h1>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Home</a>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Templates </a>
+          <ul class="nav__listitemdrop">
+            <div>
+              <li><a href="index.html#content-Alerts">Alerts</a></li>
+              <li><a href="index.html#content-Buttons">Buttons</a></li>
+              <li><a href="index.html#content-Cards">Cards</a></li>
+              <li><a href="index.html#content-Sliders">Sliders</a></li>
+              <li><a href="index.html#content-Accordion">Accordion</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Modal">Modal</a></li>
+              <li><a href="index.html#content-Navbar">Navbar</a></li>
+              <li><a href="index.html#content-Popovers">Popovers</a></li>
+              <li><a href="index.html#content-Tables">Tables</a></li>
+              <li><a href="index.html#content-Dropdowns">Dropdowns</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Tab-Menu">Tab Menu</a></li>
+              <li><a href="index.html#content-List-Groups">List Groups</a></li>
+              <li><a href="index.html#content-Toast">Toast</a></li>
+              <li><a href="index.html#content-Forms">Forms</a></li>
+              <li><a href="index.html#content-Spinners">Spinners</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Checkbox">Checkbox</a></li>
+              <li><a href="index.html#content-Pagination">Pagination</a></li>
+              <li><a href="index.html#content-Jumbotron">Jumbotron</a></li>
+              <li><a href="index.html#content-Scrollspy">Scrollspy</a></li>
+              <li><a href="index.html#content-Progress">Progress</a></li>
+            </div>
+          </ul>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="contactUs.html">Contact us</a>
+        </li>
+      </ul>
+
+      <section class="bgcolors"></section>
+
+      <div class="cont">
+        <h1>Accordion</h1>
+        <p id="sample">
+          It allows you to display different contents classified in sections, so that one of these sections remains open and closes automatically only when you open another one.
+        </p>
+        <button
+        id="button1" onclick="CopyToClipboard('div1')"
+          style="
+            float: right;
+            position: sticky;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: #fff;
+            min-width: 90px;
+            padding: 8px;
+            color: #303030;
+            font-weight: bold;
+            border: 1px solid #e9e9e9;
+            border-radius: 4px;
+          "
+          onmouseover="this.style.border = '1px solid #d5d5d5'"
+          onmouseout="this.style.border = '1px solid #e9e9e9'"
+        >
+          Copy code to clipboard
+        </button>
+        <div class="button" style="margin-top: 30px;">
+            <pre class="cards-pre">
+                <code id="div1">
+
+&lt;!--accordion container--&gt;
+                    &lt;div class="accordion" style="
+                    font-family: 'Noto Sans', sans-serif;
+                    font-size: 17.5pt;
+                    margin: 0 auto; background-color: #fff; width: 70%; border: 1px solid #ddd; border-radius: 4px; padding: 20px;"&gt;
+<p>&lt;!--accordion section 1--&gt;</p>
+                    &lt;section class="accordion-item"&gt;
+<p>&lt;!--accordion section 1 title--&gt;</p>
+<p>&lt;!--Change the title with the h1 tag--&gt;</p>
+                    &lt;h1 id="button1" style="padding: 10px; background-color: #a01c96; color: #fff; border-radius: 4px; margin: 0; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; cursor: pointer; border: 1px solid #8d1883;"
+                    onclick="document.getElementById('button1').style.background = '#8a177f'; document.getElementById('item1').style.display = 'block'; document.getElementById('item2').style.display = 'none';  document.getElementById('item3').style.display = 'none'" 
+                    onpointerover="document.getElementById('item1').style.display = 'none'"
+                    onmouseout="document.getElementById('button1').style.background = '#a01c96'"&gt;<span> Accordion Item #1 </span>&lt;/h1&gt;
+<p>&lt;!--accordion section paragraph--&gt;</p>
+<p>&lt;!--Change the paragraph with the p tag--&gt;</p>
+                    &lt;p id="item1" style="margin-top: 0px; padding: 10px; border: 1px solid #ddd; border-top: none; display: none;"&gt;
+                    <span>ipsum dolor sit amet consectetur adipisicing elit. Non,
+                    ratione! Repellendus, rerum. Commodi fugit sapiente ea cum maxime
+                    molestias, tenetur repellat fugiat quam dolorem mollitia, inventore
+                    quibusdam unde vitae ipsam.</span>
+                    &lt;/p&gt;
+                    
+                    &lt;/section&gt;
+<p>&lt;!--accordion section 2--&gt;</p>
+                    &lt;section class="accordion-item"&gt;
+<p>&lt;!--accordion section 2 title--&gt;</p>
+<p>&lt;!--Change the title with the h1 tag--&gt;</p>
+                    &lt;h1 id="button2" style="padding: 10px; background-color: #a01c96; color: #fff;  margin: 0; cursor: pointer;  border: 1px solid #8d1883;"
+                    onclick="document.getElementById('button2').style.background = '#8a177f'; document.getElementById('item2').style.display = 'block'; document.getElementById('item1').style.display = 'none'; document.getElementById('item3').style.display = 'none'"
+                    onpointerover="document.getElementById('item2').style.display = 'none'"
+                    onmouseout="document.getElementById('button2').style.background = '#a01c96'"&gt;<span> Item #2</span>&lt;/h1&gt;
+<p>&lt;!--accordion section paragraph--&gt;</p>
+<p>&lt;!--Change the paragraph with the p tag--&gt;</p>
+                    &lt;p id="item2" style="margin-top: 0px; padding: 10px; border: 1px solid #ddd; border-top: none; display: none;"&gt;
+                    <span> ipsum dolor sit amet consectetur adipisicing elit. Non,
+                    ratione! Repellendus, rerum. Commodi fugit sapiente ea cum maxime
+                    molestias, tenetur repellat fugiat quam dolorem mollitia, inventore
+                    quibusdam unde vitae ipsam.</span>
+                    &lt;/p&gt;
+                    
+                    &lt;/section&gt;
+<p>&lt;!--accordion section 3--&gt;</p>
+                    &lt;section class="accordion-item"&gt;
+<p>&lt;!--accordion section 3 title--&gt;</p>
+<p>&lt;!--Change the title with the h1 tag--&gt;</p>
+                    &lt;h1 id="button3" style="padding: 10px; background-color: #a01c96; color: #fff; border-radius: 4px; border-top-left-radius: 0; border-top-right-radius: 0; margin: 0; cursor: pointer;  border: 1px solid #8d1883;"
+                    onclick="document.getElementById('button3').style.background = '#8a177f'; document.getElementById('item3').style.display = 'block'; document.getElementById('item1').style.display = 'none'; document.getElementById('item2').style.display = 'none'"
+                    onpointerover="document.getElementById('item3').style.display = 'none'"
+                    onmouseout="document.getElementById('button3').style.background = '#a01c96'"&gt;<span> Item #3</span>&lt;/h1&gt;
+<p>&lt;!--accordion section paragraph--&gt;</p>
+<p>&lt;!--Change the paragraph with the p tag--&gt;</p>
+                    &lt;p id="item3" style="margin-top: 0px;padding: 10px; border: 1px solid #ddd; border-top: none; display: none;"&gt;
+                    <span> ipsum dolor sit amet consectetur adipisicing elit. Non,
+                    ratione! Repellendus, rerum. Commodi fugit sapiente ea cum maxime
+                    molestias, tenetur repellat fugiat quam dolorem mollitia, inventore
+                    quibusdam unde vitae ipsam.</span>
+                    &lt;/p&gt;
+                    
+                    &lt;/section&gt;
+                    
+                    &lt;/div&gt;
+                  
+                </code>
+              </pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/copyClipboard.js"></script>
+  </body>
+</html>

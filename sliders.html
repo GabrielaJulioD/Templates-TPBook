@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP Book Templates - Sliders</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/templates.css" />
+  </head>
+
+  <body>
+    <!-- main landing page content -->
+    <div class="main-content" id="main-content">
+      <ul class="main-menu">
+        <h1 style="color: #fff; font-size: 25px; cursor: pointer">
+          <a href="index.html" style="color: #fff">TP Book Templates</a>
+        </h1>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Home</a>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Templates </a>
+          <ul class="nav__listitemdrop">
+            <div>
+              <li><a href="index.html#content-Alerts">Alerts</a></li>
+              <li><a href="index.html#content-Buttons">Buttons</a></li>
+              <li><a href="index.html#content-Cards">Cards</a></li>
+              <li><a href="index.html#content-Sliders">Sliders</a></li>
+              <li><a href="index.html#content-Accordion">Accordion</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Modal">Modal</a></li>
+              <li><a href="index.html#content-Navbar">Navbar</a></li>
+              <li><a href="index.html#content-Popovers">Popovers</a></li>
+              <li><a href="index.html#content-Tables">Tables</a></li>
+              <li><a href="index.html#content-Dropdowns">Dropdowns</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Tab-Menu">Tab Menu</a></li>
+              <li><a href="index.html#content-List-Groups">List Groups</a></li>
+              <li><a href="index.html#content-Toast">Toast</a></li>
+              <li><a href="index.html#content-Forms">Forms</a></li>
+              <li><a href="index.html#content-Spinners">Spinners</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Checkbox">Checkbox</a></li>
+              <li><a href="index.html#content-Pagination">Pagination</a></li>
+              <li><a href="index.html#content-Jumbotron">Jumbotron</a></li>
+              <li><a href="index.html#content-Scrollspy">Scrollspy</a></li>
+              <li><a href="index.html#content-Progress">Progress</a></li>
+            </div>
+          </ul>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="contactUs.html">Contact us</a>
+        </li>
+      </ul>
+
+      <section class="bgcolors"></section>
+
+      <div class="cont">
+        <h1>Sliders</h1>
+        <p id="sample">
+          A slider is a feature that allows you to enter content, such as images and text, in order to present the information you need in an animated form, similar to a carousel.
+
+        </p>
+    
+        <button
+        id="button1" onclick="CopyToClipboard('div1')"
+          style="
+            float: right;
+            position: sticky;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: #fff;
+            min-width: 90px;
+            padding: 8px;
+            color: #303030;
+            font-weight: bold;
+            border: 1px solid #e9e9e9;
+            border-radius: 4px;
+          "
+          onmouseover="this.style.border = '1px solid #d5d5d5'"
+          onmouseout="this.style.border = '1px solid #e9e9e9'"
+        >
+          Copy code to clipboard
+        </button>
+        <div class="button" style="margin-top: 30px;">
+            <pre class="cards-pre">
+                <code id="div1">
+&lt;!-- Slides Container --&gt;
+                    &lt;div class="container" style="
+                    font-family: 'Noto Sans', sans-serif;
+                    font-size: 17.5pt;
+                    margin: auto;
+                    background-color: #fff;
+                    width: 800px;
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: cover;
+                    padding: 30px;border: 1px solid #ddd; 
+                    border-radius: 5px; 
+                    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.247);"&gt;
+ &lt;!-- slides content  --&gt;
+                        &lt;ul class="slider" style="
+                        position: relative;
+                        height: 300px;"&gt;
+<p> &lt;!-- slide1 --&gt;</p>
+                            &lt;li id="slide1" style="
+                            padding: 0; 
+                            margin: 0;
+                            list-style: none; 
+                            position: absolute;
+                            left: 0px;
+                            top: 0px;
+                            opacity: 1;
+                            transition: opacity .5s;
+                            background:#fff;  opacity: 1;"&gt;
+<p> &lt;!-- image space --&gt;</p>
+ <p>&lt;!-- Change the location of the file as found in TP Book --&gt;</p>
+                            &lt;img <span>src="https://tp-book-prod.azurewebsites.net/Filemanager/idcampaing/image-example1.png"</span>  style="
+                            width: 740px;
+                            height: 300px;
+                            max-width: 100%;
+                            max-height: 100%;
+                            object-fit: cover;" /&gt;
+                            &lt;/li&gt;
+<p>&lt;!-- slide2 --&gt;</p>
+                            &lt;li id="slide2" style="padding: 0;
+                            margin: 0;
+                            list-style: none;
+                            position: absolute;
+                            left: 0px;
+                            top: 0px;
+                            opacity: 0;
+                            transition: opacity .5s;
+                            background:#fff;"&gt;
+<p>&lt;!-- image space --&gt;</p>
+<p>&lt;!-- Change the location of the file as found in TP Book --&gt;</p>
+                             &lt;img <span> src="https://tp-book-prod.azurewebsites.net/Filemanager/idcampaing/image-example2.png" </span> style="
+                             width: 740px;
+                             height: 300px;
+                             max-width: 100%;
+                             max-height: 100%;
+                             object-fit: cover;" /&gt;
+                            &lt;/li&gt;
+<p>&lt;!-- slide3 --&gt;</p>
+                            &lt;li id="slide3" style="
+                            padding: 0;
+                            margin: 0;
+                            list-style: none;
+                            position: absolute;
+                            left: 0px;
+                            top: 0px;
+                            opacity: 0;
+                            width: 740px;
+                            height: 300px;
+                            max-width: 100%;
+                            max-height: 100%;
+                            object-fit: cover;
+                            height: inherit;
+                            transition: opacity .5s;
+                            background:#fff;"&gt;
+<p> &lt;!-- text example --&gt;</p>
+<p> &lt;!-- Change the title inside the h1 tag --&gt;</p>
+                                &lt;h1&gt;<span>Example</span>&lt;/h1&gt;
+<p> &lt;!-- Change the paragraph inside the p tag --&gt;</p>
+                                &lt;p&gt;Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis ullam id eaque consequatur, ab
+                                    ipsam quia architecto odit obcaecati quis odio debitis qui iste, reiciendis eius recusandae, porro
+                                    neque facere?&lt;/p&gt;
+<p>&lt;!-- Change the text inside of the link tag and the url link within the href attribute  --&gt;</p>
+                                &lt;a target="_blank" href="https://teleperformance.com/"&gt;TP Page&lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                        &lt;div class="menubtn-contaniner" style="max-width: 100px; margin: 0 auto;"&gt;
+&lt;!-- menu buttons --&gt;
+                        &lt;ul class="menu" style="margin-top: 10px; display: flex; justify-content: space-around; padding: 0;"&gt;
+&lt;!-- btn1 --&gt;
+                        &lt;li style="list-style:none"&gt;
+                            &lt;input id="btn1" type="button"
+                            style="
+                            padding: 0;
+                            margin: 0;
+                            list-style: none;
+                            display: inline-block;
+                            text-decoration: none;
+                            width: 15px;
+                            height: 15px;
+                            font-size: 14px;
+                            border-radius: 100%;
+                            background-color: #7b7b7b;
+                            border: 1px solid #bfbfbf;"
+                            onclick="this.style.background = '#7b7b7b'; document.getElementById('btn2').style.backgroundColor = '#e6e6e6';  document.getElementById('btn3').style.backgroundColor = '#e6e6e6';
+                            document.getElementById('slide1').style.opacity = '1' ; document.getElementById('slide2').style.opacity = '0';  document.getElementById('slide3').style.opacity = '0'"
+                            value="" /&gt;
+                              &lt;/li&gt;
+&lt;!-- btn2 --&gt;
+                        &lt;li style="list-style:none"&gt;
+                            &lt;input id="btn2" type="button" style="
+                            padding: 0;
+                            margin: 0;
+                            list-style: none;
+                            display: inline-block;
+                            text-decoration: none;
+                            width: 15px;
+                            height: 15px;
+                            font-size: 14px;
+                            border-radius: 100%;
+                            background-color: #e6e6e6;
+                            border: 1px solid #bfbfbf;"
+                                onclick="this.style.background = '#7b7b7b'; document.getElementById('btn1').style.backgroundColor = '#e6e6e6';  document.getElementById('btn3').style.backgroundColor = '#e6e6e6';
+                                document.getElementById('slide2').style.opacity = '1'; document.getElementById('slide1').style.opacity = '0';  document.getElementById('slide3').style.opacity = '0'"
+                                value="" /&gt;
+                              &lt;/li&gt;
+&lt;!-- btn3 --&gt;
+                         &lt;li style="list-style:none"&gt;
+                            &lt;input id="btn3" type="button"  style="
+                            padding: 0;
+                            margin: 0;
+                            list-style: none;
+                            display: inline-block;
+                            text-decoration: none;
+                            width: 15px;
+                            height: 15px;
+                            font-size: 14px;
+                            border-radius: 100%;
+                            background-color: #e6e6e6;
+                            border: 1px solid #bfbfbf;"
+                                onclick="this.style.background = '#7b7b7b'; document.getElementById('btn1').style.backgroundColor = '#e6e6e6';  document.getElementById('btn2').style.backgroundColor = '#e6e6e6';
+                                document.getElementById('slide3').style.opacity = '1'; document.getElementById('slide1').style.opacity = '0';  document.getElementById('slide2').style.opacity = '0'"
+                                value="" /&gt;
+                              &lt;/li&gt;
+                            &lt;/div&gt;
+                    &lt;/div&gt;
+                </code>
+              </pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/copyClipboard.js"></script>
+  </body>
+</html>

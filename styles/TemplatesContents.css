@@ -1,0 +1,70 @@
+.content {
+  width: 100%;
+  padding: 30px;
+  background-image: url(../images/bgcontent.svg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.content-text {
+  width: 100%;
+  border-radius: 4px;
+  padding: 2rem 2rem;
+  color: #000;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  box-shadow: 10px 10px 40px rgba(160, 160, 160, 0.5);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5.4px);
+}
+.content-text > h1 {
+  color: #fff;
+  border-radius: 40px;
+  background: linear-gradient(
+    90deg,
+    rgba(120, 0, 150, 1) 0%,
+    rgba(255, 0, 130, 1) 100%
+  );
+  text-align: center;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.247);
+  text-shadow: 3px 1px 15px rgb(0, 0, 0);
+  margin-bottom: 20px;
+}
+.content-text > p {
+  margin-bottom: 30px;
+  color: #212529;
+  font-size: 20px;
+}
+
+#content-Alerts > .content-text,
+#content-Buttons > .content-text,
+#content-Modal > .content-text,
+#content-Popovers > .content-text,
+#content-Dropdowns > .content-text,
+#content-Checkbox > .content-text,
+#content-Navbar > .content-text,
+#content-Pagination > .content-text,
+#content-Tab-Menu > .content-text,
+#content-Toast > .content-text,
+#content-Progress > .content-text,
+#content-Spinners > .content-text {
+  height: 100vh;
+}
+#content-Toast > .content-text {
+  height: 80vh;
+}
+.main-templates-content .content-text p > a {
+  text-decoration: none;
+  width: 90px;
+  padding: 8px;
+  color: #ae2da9;
+  font-weight: bold;
+}
+.main-templates-content .content-text p > a:hover {
+  text-decoration: underline;
+  width: 90px;
+  padding: 8px;
+  color: #8f008a;
+  font-weight: bold;
+}

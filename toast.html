@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP Book Templates - Toast</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/templates.css" />
+  </head>
+
+  <body>
+    <!-- main landing page content -->
+    <div class="main-content" id="main-content">
+      <ul class="main-menu">
+        <h1 style="color: #fff; font-size: 25px; cursor: pointer">
+          <a href="index.html" style="color: #fff">TP Book Templates</a>
+        </h1>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Home</a>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="index.html">Templates </a>
+          <ul class="nav__listitemdrop">
+            <div>
+              <li><a href="index.html#content-Alerts">Alerts</a></li>
+              <li><a href="index.html#content-Buttons">Buttons</a></li>
+              <li><a href="index.html#content-Cards">Cards</a></li>
+              <li><a href="index.html#content-Sliders">Sliders</a></li>
+              <li><a href="index.html#content-Accordion">Accordion</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Modal">Modal</a></li>
+              <li><a href="index.html#content-Navbar">Navbar</a></li>
+              <li><a href="index.html#content-Popovers">Popovers</a></li>
+              <li><a href="index.html#content-Tables">Tables</a></li>
+              <li><a href="index.html#content-Dropdowns">Dropdowns</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Tab-Menu">Tab Menu</a></li>
+              <li><a href="index.html#content-List-Groups">List Groups</a></li>
+              <li><a href="index.html#content-Toast">Toast</a></li>
+              <li><a href="index.html#content-Forms">Forms</a></li>
+              <li><a href="index.html#content-Spinners">Spinners</a></li>
+            </div>
+            <div>
+              <li><a href="index.html#content-Checkbox">Checkbox</a></li>
+              <li><a href="index.html#content-Pagination">Pagination</a></li>
+              <li><a href="index.html#content-Jumbotron">Jumbotron</a></li>
+              <li><a href="index.html#content-Scrollspy">Scrollspy</a></li>
+              <li><a href="index.html#content-Progress">Progress</a></li>
+            </div>
+          </ul>
+        </li>
+        <li class="nav__listitem">
+          <a style="font-size: 1rem" href="contactUs.html">Contact us</a>
+        </li>
+      </ul>
+
+      <section class="bgcolors"></section>
+
+      <div class="cont">
+        <h1>Toast</h1>
+        <p id="sample">
+          These are notifications whose function is to indicate a message or important information in the form of a reminder. They work through a button that shows the Toast when clicked.
+        </p>
+        <button
+          id="button1"
+          onclick="CopyToClipboard('div1')"
+          style="
+            float: right;
+            position: sticky;
+            margin-top: 30px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            background-color: #fff;
+            min-width: 90px;
+            padding: 8px;
+            color: #303030;
+            font-weight: bold;
+            border: 1px solid #e9e9e9;
+            border-radius: 4px;
+          "
+          onmouseover="this.style.border = '1px solid #d5d5d5'"
+          onmouseout="this.style.border = '1px solid #e9e9e9'"
+        >
+          Copy code to clipboard
+        </button>
+        <div class="button" style="margin-top: 30px">
+          <pre class="cards-pre">
+                <code id="div1">
+&lt;!-- Toast Conatiner --&gt;
+                    &lt;div class="toast" style="font-family: 'Noto Sans', sans-serif;
+                    font-size: 17.5pt;"&gt;
+&lt;!-- Show Toast Button --&gt;
+<p>&lt;!-- Change the text of the button inside the value  --&gt;</p>
+                      &lt;input 
+                     <span> value="Show live toast"</span>
+                      type="button" class="bttn-toast" id="ToastIDBtn" style="
+                      text-align: center;
+                      margin-top: 20px;
+                      min-width: 150px;
+                      background-color: #a01c96;
+                      border-radius: 4px;
+                      border: none;
+                      color: #fff;
+                      margin-right: 5px;
+                      cursor: pointer;
+                      width: 100px;
+                      padding: 10px;
+                      text-decoration: none;"
+                      onclick="document.getElementById('ToastID').style.display='block'; document.getElementById('ToastID').style.opacity='100';" &gt;
+&lt;!-- Toast Conatiner --&gt;
+                        &lt;div id="ToastID" class="toast-container" role="alert" style="box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2); border: 1px solid #ddd; position: fixed;bottom: 0; right: 0; width: fit-content; max-width: 25%; margin: 10px; border-radius: 5px; background-color: white;"&gt;
+&lt;!-- Toast Header --&gt;
+                          &lt;div class="toast-header" style="border-bottom: 0.5px solid lightgray; border-radius: 5px; position: relative;padding: 10px; margin-top: -1%;"&gt;
+&lt;!-- Toast Logo --&gt;
+<p>&lt;!-- Change the location of the file as found in TP Book --&gt;</p>
+                            &lt;img<span> src="https://tp-book-prod.azurewebsites.net/Filemanager/idcampaing/image-example2.png" </span>class="Toast-logo" alt="..." width="10px" height="10px"&gt;
+&lt;!-- Toast title --&gt;
+<p>&lt;!-- Change the title of the card inside the strong tag --&gt;</p>
+                            &lt;strong class="title-Toast"&gt;<span>Toast title</span>&lt;/strong&gt;
+&lt;!-- Toast Subtitle --&gt;
+<p>&lt;!-- Change the subtitle of the card inside the small tag --&gt;</p>
+                            &lt;small class="Subtitle-toast" style="color:rgb(202, 201, 201);"&gt;<span>11 mins ago</span>&lt;/small&gt;
+                            &lt;input value="&times;"  type="button" class="bttn-close" style="right: 2%; top: 20%; position: absolute; border: none; background:none; font-size: 18px; color: rgb(202, 201, 201);" onclick="document.getElementById('ToastID').style.display='none'; document.getElementById('ToastID').style.opacity='0';" /&gt;
+                          &lt;/div&gt;
+&lt;!-- Toast Body --&gt;
+<p>&lt;!-- Change the subtitle of the card inside the div tag --&gt;</p>
+                          &lt;div class="toast-body" style="padding: 10px;"&gt;
+                          <span>  Hello, world! This is a toast message. Insert Here Text!</span>
+                          &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                </code>
+              </pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/copyClipboard.js"></script>
+  </body>
+</html>
